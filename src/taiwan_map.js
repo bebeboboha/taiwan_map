@@ -10,7 +10,7 @@ const TaiwanMap = new Vue({
               height = (this.$refs.map.offsetHeight).toFixed();
   
         // 判斷螢幕寬度，給不同放大值
-        let mercatorScale, w = window.screen.width;
+        let mercatorScale, w = document.getElementById("taiwan_map").offsetWidth;
         if(w > 1366) {
           mercatorScale = 11000;
         }

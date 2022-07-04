@@ -11,18 +11,22 @@
 </head>
 
 <body>
-
-  <div class="container" id="taiwan_map">
-    <div class="taiwan-map" ref="map">
-      <div id="map">
-        <svg id="svg"></svg>
+  <div style="padding: 0 30px; width: 50%;">
+    <div class="container" id="taiwan_map">
+      <div class="taiwan-map" ref="map">
+        <div>
+          <div id="map" style="width: 140px;height: 360px;">
+            <svg id="svg"></svg>
+          </div>
+        </div>
+      </div>
+      <div class="shop-list">
+        <h1>{{ h1 }}</h1>
+        <h2>{{ h2 }}</h2>
       </div>
     </div>
-    <div class="shop-list">
-      <h1>{{ h1 }}</h1>
-      <h2>{{ h2 }}</h2>
-    </div>
   </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
   <script src="https://d3js.org/d3.v3.min.js"></script>
