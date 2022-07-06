@@ -717,7 +717,8 @@
                     "Pegation",
                     "TSMC",
                     "test"
-                ]
+                ],
+                "MORELINK": "https://www.google.com.tw/?hl=zh_TW"
             }
         },
         {
@@ -1903,7 +1904,7 @@
                 "COMPANIES": [
                     "Pegation",
                     "TSMC"
-                ]
+                ],
             }
         },
         {
