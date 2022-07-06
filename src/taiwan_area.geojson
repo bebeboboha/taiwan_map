@@ -70,7 +70,10 @@
                 "COUNTYID": "X",
                 "COUNTYCODE": "10016",
                 "COUNTYNAME": "離島",
-                "COUNTYENG": "Surrounding Islands"
+                "COUNTYENG": "Surrounding Islands",
+                "COMPANIES": [
+                    "TSMC"
+                ]
             }
         },
         {
@@ -708,7 +711,13 @@
                 "COUNTYID": "G",
                 "COUNTYCODE": "10002",
                 "COUNTYNAME": "北部",
-                "COUNTYENG": "Northern Taiwan"
+                "COUNTYENG": "Northern Taiwan",
+                "COMPANIES": [
+                    "HON HAI",
+                    "Pegation",
+                    "TSMC",
+                    "test"
+                ]
             }
         },
         {
@@ -1280,7 +1289,11 @@
                 "COUNTYID": "N",
                 "COUNTYCODE": "10007",
                 "COUNTYNAME": "中部",
-                "COUNTYENG": "Central Taiwan"
+                "COUNTYENG": "Central Taiwan",
+                "COMPANIES": [
+                    "HON HAI",
+                    "TSMC"
+                ]
             }
         },
         {
@@ -1886,7 +1899,11 @@
                 "COUNTYID": "T",
                 "COUNTYCODE": "10013",
                 "COUNTYNAME": "南部",
-                "COUNTYENG": "Southern Taiwan"
+                "COUNTYENG": "Southern Taiwan",
+                "COMPANIES": [
+                    "Pegation",
+                    "TSMC"
+                ]
             }
         },
         {
@@ -2316,7 +2333,12 @@
                 "COUNTYID": "V",
                 "COUNTYCODE": "10014",
                 "COUNTYNAME": "東部",
-                "COUNTYENG": "East Taiwan"
+                "COUNTYENG": "East Taiwan",
+                "COMPANIES": [
+                    "HON HAI",
+                    "Pegation",
+                    "TSMC"
+                ]
             }
         }
     ]

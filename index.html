@@ -15,14 +15,14 @@
     <div class="container" id="taiwan_map">
       <div class="taiwan-map" ref="map">
         <div>
-          <div id="map" style="width: 140px;height: 360px;">
+          <div id="map" style="height: 360px;">
             <svg id="svg"></svg>
           </div>
         </div>
       </div>
       <div class="shop-list">
         <h1>{{ h1 }}</h1>
-        <h2>{{ h2 }}</h2>
+        <p v-for="company in companies">{{ company }}</p>
       </div>
     </div>
   </div>
