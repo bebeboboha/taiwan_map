@@ -22,7 +22,8 @@
       </div>
       <div class="shop-list">
         <h1>{{ h1 }}</h1>
-        <p v-for="company in companies">{{ company }}</p>
+        <p v-for="company in showCompanies">{{ company }}</p>
+        <a :href="morelink" v-if="companies.length > 3">MORE +</a>
       </div>
     </div>
   </div>

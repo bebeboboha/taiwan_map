@@ -2,7 +2,13 @@ const TaiwanMap = new Vue({
     el: '#taiwan_map',
     data: {
       h1: '',
-      companies: []
+      companies: [],
+      morelink: ''
+    },
+    computed:{
+      showCompanies(){
+        return this.companies.slice(0,3)
+      }
     },
     methods: {
       async getTaiwanMap() {
@@ -54,6 +60,8 @@ const TaiwanMap = new Vue({
             .on('click', d => {
               this.h1 = d.properties.COUNTYENG; // 換英文名
               this.companies = d.properties.COMPANIES; // 換企業名
+              this.morelink = d.properties.MORELINK || ''; // 查看更多企業連結
+
               // 有 .active 存在，就移除 .active
               if(document.querySelector('.active')) {
                 document.querySelector('.active').classList.remove('active');
