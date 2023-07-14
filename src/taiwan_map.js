@@ -120,7 +120,7 @@
             .attr('viewBox', `0 0 ${width*2} ${height}`);
         
         // 讓d3抓GeoJSON檔，並寫入path的路徑
-        var url = 'https://raw.githubusercontent.com/bebeboboha/taiwan_map/main/src/taiwan.geojson';
+        var url = 'https://raw.githubusercontent.com/bebeboboha/taiwan_map/main/src/taiwan_country.geojson';
         await d3.json(url, (error, geometry) => {
           if (error) throw error;
   
