@@ -55,7 +55,7 @@
 //             .attr('d', path)
 //             .attr({
 //               // 設定id，為了click時加class用
-//               id: (d) => 'city' + d.properties.COUNTYCODE
+//               id: (d) => 'city' + d.properties.COUNTYSN
 //             })
 //             .on('click', d => {
 //               this.h1 = d.properties.COUNTYENG; // 換英文名
@@ -67,7 +67,7 @@
 //                 document.querySelector('.active').classList.remove('active');
 //               }
 //               // 被點擊的縣市加上 .active
-//               document.getElementById('city' + d.properties.COUNTYCODE).classList.add('active');
+//               document.getElementById('city' + d.properties.COUNTYSN).classList.add('active');
 //             });
 //         });
 //         return svg;
@@ -131,7 +131,7 @@
             .attr('d', path)
             .attr({
               // 設定id，為了click時加class用
-              id: (d) => 'city' + d.properties.COUNTYCODE
+              id: (d) => 'city' + d.properties.COUNTYSN
             })
             .on('click', d => {
               this.h1 = d.properties.COUNTYNAME; // 換中文名
@@ -141,7 +141,7 @@
                 document.querySelector('.active').classList.remove('active');
               }
               // 被點擊的縣市加上 .active
-              document.getElementById('city' + d.properties.COUNTYCODE).classList.add('active');
+              document.getElementById('city' + d.properties.COUNTYSN).classList.add('active');
             });
         });
         return svg;
