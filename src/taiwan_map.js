@@ -73,7 +73,7 @@
               // 被點擊的縣市加上 .active
               document.getElementById('city' + d.properties.COUNTYSN).classList.add('active');
               // 被點擊的縣市 開啟連結
-              window.open(d.properties.url);
+              window.open(d.properties.URL);
             });
         });
         return svg;
