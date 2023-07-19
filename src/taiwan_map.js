@@ -4,6 +4,7 @@
     el: '#taiwan_map',
     data: {
       h1: '縣市',
+      h2: '縣市英文',
     },
     methods: {
       async getTaiwanMap() {
@@ -52,6 +53,17 @@
               // 設定id，為了click時加class用
               id: (d) => 'city' + d.properties.COUNTYSN
             })
+            .on('mouseover', d => {
+              this.h1 = d.properties.COUNTYNAME; // 換中文名
+              this.h2 = d.properties.COUNTYENG; // 換英文名
+
+              // 有 .active 存在，就移除 .active
+              if(document.querySelector('.active')) {
+                document.querySelector('.active').classList.remove('active');
+              }
+              // 被點擊的縣市加上 .active
+              document.getElementById('city' + d.properties.COUNTYSN).classList.add('active');
+            })
             .on('click', d => {
               this.h1 = d.properties.COUNTYNAME; // 換中文名
               // 有 .active 存在，就移除 .active
@@ -60,6 +72,8 @@
               }
               // 被點擊的縣市加上 .active
               document.getElementById('city' + d.properties.COUNTYSN).classList.add('active');
+              // 被點擊的縣市 開啟連結
+              window.open(d.properties.url);
             });
         });
         return svg;

@@ -22,13 +22,12 @@ body {
 }
 
 .taiwan-map {
-    width: 80%;
+    width: 100%;
     height: 100%;
 }
 
-.shop-list {
-    width: 20%;
-}
+/* .shop-list {
+} */
 
 #map {
     display: -webkit-box;
