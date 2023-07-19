@@ -36,7 +36,7 @@
         var svg = await d3.select('#svg')
             .attr('width', width)
             .attr('height', height)
-            .attr('viewBox', `0 0 ${width*2} ${height}`);
+            .attr('viewBox', `${width*0.5/1.5} 0 ${width*1.5} ${height}`);
         
         // 讓d3抓GeoJSON檔，並寫入path的路徑
         var url = 'https://raw.githubusercontent.com/bebeboboha/taiwan_map/main/src/taiwan_country.geojson';
